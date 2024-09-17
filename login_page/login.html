@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <!-- <script src="./script1.js"></script> -->
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>sign-up</h1>
+        <form>
+          <div class="input">
+            <label for="name">name:</label>
+            <span style="color: red" id="name-error" class="error"></span>
+            <div class="input-field">
+              <input type="text" id="name" required placeholder="name" />
+            </div>
+            <label for="email">Email:</label>
+            <span style="color: red" id="email-error" class="error"></span>
+            <div class="input-field">
+              <input type="email" id="email" required placeholder="email" />
+            </div>
+            <label for="password">password:</label>
+            <span style="color: red" id="password-error" class="error"></span>
+            <div class="input-field">
+              <input
+                type="password"
+                id="password"
+                required
+                placeholder="password"
+              />
+            </div>
+          </div>
+
+          <div class="button">
+            <button type="submit" onclick="signin()">sign-in</button>
+            <button type="submit" onclick="signup()">sing-up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>
