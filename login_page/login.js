@@ -1,3 +1,4 @@
+checkIfLoggedIn();
 let valid = true;
 function signup() {
   valid = true;
@@ -100,5 +101,11 @@ function matchUser(user, email) {
     return true;
   } else {
     return false;
+  }
+}
+function checkIfLoggedIn() {
+  const loggedInUser_str = sessionStorage.getItem("todoAppUser");
+  if (loggedInUser_str) {
+    window.location.href = "../list.html";
   }
 }
